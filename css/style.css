@@ -1,0 +1,564 @@
+/* ========================================================================== Global & Reset Styles ========================================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ========================================================================== Top Info Bar ========================================================================== */
+.top-bar {
+  background-color: #333;
+  color: #b3b3b3;
+  font-size: 12px;
+  padding: 8px 0;
+}
+
+.top-bar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-bar .location-text {
+  margin: 0;
+}
+
+.top-bar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.top-bar-right .divider,
+.top-bar-right .auth-divider {
+  color: #4d4d4d;
+}
+
+.top-bar-right .auth-link:hover {
+  color: #fff;
+}
+
+/* ========================================================================== Main Header & Search Component ========================================================================== */
+.main-header {
+  padding: 20px 0;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header .logo img {
+  height: 38px;
+}
+
+/* Header Search Bar */
+.search-bar {
+  display: flex;
+  width: 500px;
+  position: relative;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px 110px 10px 16px;
+  border: 1px solid #e6e6e6;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+}
+
+.search-bar button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #00b207;
+  color: #fff;
+  border: none;
+  padding: 0 24px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+  background-color: #008a05;
+}
+
+/* Header Shopping Cart */
+.main-header .cart {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.main-header .cart i {
+  font-size: 28px;
+  color: #1a1a1a;
+}
+
+.main-header .cart small {
+  display: block;
+  color: #4d4d4d;
+  font-size: 11px;
+}
+
+.main-header .cart strong {
+  color: #1a1a1a;
+  font-size: 14px;
+}
+
+/* ========================================================================== Navigation Bar ========================================================================== */
+.navbar {
+  background-color: #333;
+  padding: 14px 0;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+}
+
+.nav-link {
+  color: #999;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #fff;
+}
+
+.navbar-contact {
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ========================================================================== Breadcrumb Section ========================================================================== */
+.breadcrumb-section {
+  background-image: url(../images/breadcrumb-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 40px 0;
+}
+
+.breadcrumb-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.breadcrumb {
+  margin: 0;
+  font-size: 14px;
+}
+
+.breadcrumb-item a {
+  color: #808080;
+}
+
+.breadcrumb-item.active {
+  color: #00b207;
+}
+
+/* ========================================================================== Sign In Page Styles ========================================================================== */
+.signin-main-section {
+  background-color: #f7f7f7;
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signin-card {
+  background-color: #ffffff;
+  padding: 32px;
+  border-radius: 8px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 520px;
+}
+
+.signin-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+/* Form Inputs */
+.custom-input {
+  height: 48px;
+  padding: 12px 16px;
+  border: 1px solid #e6e6e6;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #1a1a1a;
+  box-shadow: none !important;
+  transition: border-color 0.3s ease;
+}
+
+.custom-input:focus {
+  border-color: #00b207;
+}
+
+.custom-input::placeholder {
+  color: #999999;
+}
+
+/* Password Eye Icon */
+.password-toggle-icon {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #808080;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Form Options (Remember Me & Forgot Password) */
+.remember-label {
+  font-size: 14px;
+  color: #666666;
+  cursor: pointer;
+}
+
+.custom-checkbox:checked {
+  background-color: #00b207;
+  border-color: #00b207;
+}
+
+.forgot-password-link {
+  font-size: 14px;
+  color: #666666;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.forgot-password-link:hover {
+  color: #00b207;
+}
+
+/* Login Button */
+.submit-btn {
+  height: 45px;
+  background-color: #00b207 !important;
+  border: none !important;
+  border-radius: 43px !important;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  transition: background-color 0.3s ease !important;
+}
+
+.submit-btn:hover {
+  background-color: #008a05 !important;
+}
+
+/* Register Footer Text */
+.register-text {
+  font-size: 14px;
+  color: #666666;
+}
+
+.register-link {
+  color: #1a1a1a;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.register-link:hover {
+  color: #00b207;
+}
+
+/* ========================================================================== Footer Section ========================================================================== */
+.footer {
+  background-color: #1a1a1a;
+  color: #808080;
+}
+
+/* Newsletter Subscription Styling */
+.newsletter-section {
+  background-color: #f7f7f7;
+  padding: 40px 0;
+  color: #1a1a1a;
+}
+
+.newsletter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.newsletter-text h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.newsletter-text p {
+  font-size: 14px;
+  color: #808080;
+  max-width: 450px;
+  margin: 0;
+}
+
+.newsletter-form {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.newsletter-form .input-group {
+  display: flex;
+  position: relative;
+  width: 450px;
+}
+
+/* Input Field Styling with Overridden Bootstrap Radius */
+.newsletter-form input {
+  padding: 14px 170px 14px 24px;
+  border-radius: 30px !important;
+  border: 1px solid #e6e6e6;
+  outline: none;
+  font-size: 14px;
+  width: 100%;
+}
+
+/* Subscription Button Styling */
+.newsletter-form button {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  bottom: 5px;
+  background-color: #00b207;
+  color: #fff;
+  border: none;
+  padding: 0 32px;
+  border-radius: 30px !important;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: #008a05;
+}
+
+.social-links {
+  display: flex;
+  gap: 8px;
+}
+
+.social-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4d4d4d;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background-color: #00b207;
+  color: #fff;
+}
+
+/* Main Footer Content */
+.main-footer {
+  padding: 60px 0 0 0;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 2fr repeat(4, 1fr);
+  gap: 30px;
+  padding-bottom: 50px;
+}
+
+.footer-col h4 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.footer-col ul li {
+  margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+  font-size: 14px;
+  color: #999;
+  transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #fff;
+}
+
+.company-info .logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.company-info .logo i {
+  font-size: 32px;
+  color: #00b207;
+}
+
+.company-info p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  color: #808080;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.contact-info .phone,
+.contact-info .email {
+  color: #fff;
+  border-bottom: 2px solid #00b207;
+  padding-bottom: 2px;
+}
+
+/* Footer Bottom Bar */
+.bottom-footer {
+  border-top: 1px solid #333;
+  padding: 20px 0;
+}
+
+.bottom-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.bottom-footer .copyright {
+  margin: 0;
+  font-size: 14px;
+  color: #808080;
+}
+
+.payment-methods {
+  display: flex;
+  gap: 8px;
+}
+
+.payment-methods img {
+  height: 32px;
+}
+
+/* ========================================================================== Responsive Design (Media Queries) ========================================================================== */
+
+/* Tablet & Smaller Desktop Screens */
+@media (max-width: 991px) {
+  .header-container {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .search-bar {
+    order: 3;
+    width: 100%;
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .newsletter-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .newsletter-form .input-group {
+    width: 100%;
+  }
+}
+
+/* Mobile Screens */
+@media (max-width: 576px) {
+  .top-bar-container {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .bottom-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
